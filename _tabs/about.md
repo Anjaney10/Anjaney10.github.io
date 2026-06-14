@@ -20,4 +20,4 @@ I am a bioinformatics and computational biology research scientist focused on ma
 - Workflow automation and reproducibility
 - Statistical thinking for biological data
 
-{% include newsletter-signup.html %}
+// {% include newsletter-signup.html %}
