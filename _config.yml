@@ -1,0 +1,72 @@
+# The Site Configuration
+
+theme: jekyll-theme-chirpy
+lang: en
+timezone: UTC
+
+title: Bioinformatics & Computational Biology
+
+tagline: Tutorials, explainers, and practical tips for beginners.
+description: >-
+  A personal bioinformatics and computational biology website sharing beginner-friendly
+  tutorials, conceptual explainers, practical tips, and curated resources.
+
+url: "https://anjaney10.github.io"
+baseurl: ""
+
+github:
+  username: Anjaney10
+
+social:
+  name: Anjaney
+  email: anjaney10@users.noreply.github.com
+  links:
+    - https://github.com/Anjaney10
+    - https://www.linkedin.com/in/anjaney10/
+
+avatar: https://avatars.githubusercontent.com/u/49697391?v=4
+
+theme_mode: dark
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-archives
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      author: Anjaney
+      toc: true
+      comments: true
+      permalink: /posts/:title/
+
+read_time: true
+
+comments:
+  active: giscus
+  giscus:
+    repo: "Anjaney10/Anjaney10.github.io"
+    repo_id: ""
+    category: "General"
+    category_id: ""
+    mapping: "pathname"
+    strict: "0"
+    input_position: "bottom"
+    lang: "en"
+    reactions_enabled: "1"
+
+toc: true
+
+google_analytics:
+
+# Optional newsletter endpoint consumed by _includes/newsletter-signup.html
+newsletter_url: "https://example.com/newsletter"
