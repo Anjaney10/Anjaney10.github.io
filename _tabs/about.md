@@ -19,5 +19,3 @@ I am a bioinformatics and computational biology research scientist focused on ma
 - RNA-seq and functional interpretation
 - Workflow automation and reproducibility
 - Statistical thinking for biological data
-
-// {% include newsletter-signup.html %}
