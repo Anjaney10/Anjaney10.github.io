@@ -6,7 +6,7 @@ order: 1
 
 ## About me
 
-I am a bioinformatics and computational biology enthusiast focused on making learning approachable for beginners.
+I am a bioinformatics and computational biology research scientist focused on making learning approachable for beginners.
 
 ### What you'll find here
 - Step-by-step tutorials for practical tasks
