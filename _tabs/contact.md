@@ -6,8 +6,8 @@ order: 2
 
 ## Contact
 
-- **Email:** [anjaney10@users.noreply.github.com](mailto:anjaney10@users.noreply.github.com)
+- **Email:** [anjaneyp@ncbs.res.in](mailto:anjaneyp@ncbs.res.in)
 - **GitHub:** [Anjaney10](https://github.com/Anjaney10)
-- **LinkedIn:** [anjaney10](https://www.linkedin.com/in/anjaney10/)
+- **LinkedIn:** [anjaneyj](https://www.linkedin.com/in/anjaneyj/)
 
 If you'd like a topic covered (tutorial, explainer, or tool walkthrough), feel free to reach out.
