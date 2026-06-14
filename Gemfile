@@ -8,4 +8,6 @@ group :jekyll_plugins do
   gem "jekyll-archives"
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
+group :test do
+  gem "html-proofer"
 end
