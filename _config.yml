@@ -68,5 +68,14 @@ toc: true
 
 google_analytics:
 
+jekyll-archives:
+  enabled: [tags, categories]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
+
 # Optional newsletter endpoint consumed by _includes/newsletter-signup.html
-# newsletter_url: "https://example.com/newsletter"
+newsletter_url: "https://example.com/newsletter"
