@@ -1,18 +1,14 @@
 ---
-title: "TissUUmaps"
+title: "A Comprehensive Guide to Installing TissUUmaps and Visualizing Visium HD Spatial Data"
 date: 2026-06-15 12:00:00 +0000
 categories: [Resources]
 tags: [resources, tools]
 author: Anjaney
 ---
 
-# A Comprehensive Guide to Installing TissUUmaps and Visualizing Visium HD Spatial Data
-
 Visium HD data offers incredible resolution, capturing spatial transcriptomics at the level of millions of 2µm bins or accurately segmented single cells. However, the sheer size of these datasets means you cannot simply load raw Space Ranger outputs into standard viewers. TissUUmaps is a powerful, Linux-native viewer that handles this scale using a pyramidal tiling engine (similar to Google Maps), which only loads the pixels and data points currently in view.
 
 Installing complex scientific software like TissUUmaps from scratch—especially on newer operating systems like Ubuntu 24.04, can lead to deep dependency conflicts (often referred to as "DLL Hell"). This guide provides a highly reproducible, robust method for compiling and running TissUUmaps, along with the exact pre-processing steps required to visualize your Visium HD data.
-
----
 
 ### Part 1: The Installation Challenge and the Miniforge Solution
 
