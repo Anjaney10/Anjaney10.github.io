@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Starter Resource Pack for Bioinformatics"
 date: 2026-06-14 12:00:00 +0000
 categories: [Resources]
