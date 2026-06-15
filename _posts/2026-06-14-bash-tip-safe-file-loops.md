@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Tip: Safer File Loops in Bash"
 date: 2026-06-14 11:00:00 +0000
 categories: [Tips]
