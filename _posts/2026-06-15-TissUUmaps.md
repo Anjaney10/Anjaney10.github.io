@@ -1,4 +1,10 @@
-A Comprehensive Guide to Installing TissUUmaps and Visualizing Visium HD Spatial Data
+---
+title: "A Comprehensive Guide to Installing TissUUmaps and Visualizing Visium HD Spatial Data"
+date: 2026-06-15 12:00:00 +0000
+categories: [Resources]
+tags: [resources, tools, spatial data, python]
+author: Anjaney
+---
 
 Visium HD data offers incredible resolution, capturing spatial transcriptomics at the level of millions of 2µm bins or accurately segmented single cells. However, the sheer size of these datasets means you cannot simply load raw Space Ranger outputs into standard viewers. TissUUmaps is a powerful, Linux-native viewer that handles this scale using a pyramidal tiling engine (similar to Google Maps), which only loads the pixels and data points currently in view.
 
