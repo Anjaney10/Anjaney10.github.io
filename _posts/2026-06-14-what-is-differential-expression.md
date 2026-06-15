@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "What Is Differential Expression Analysis?"
 date: 2026-06-14 10:00:00 +0000
 categories: [Explainers]
