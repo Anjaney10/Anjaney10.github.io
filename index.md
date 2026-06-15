@@ -14,8 +14,6 @@ I'm **Anjaney**, and this site focuses on beginner-friendly **bioinformatics** a
 - Python, R, and Bash for bioinformatics
 - Biological data analysis and visualization
 
-{% include newsletter-signup.html %}
-
 ## Recent posts
 
 <ul class="content ps-0">
