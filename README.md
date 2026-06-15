@@ -20,6 +20,7 @@ Create a new file in `_posts/` with `YYYY-MM-DD-title.md`:
 
 ```md
 ---
+layout: post
 title: "Your Post Title"
 date: 2026-06-14 09:00:00 +0000
 categories: [Tutorials]
