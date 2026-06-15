@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Getting Started with FASTQ Quality Control"
 date: 2026-06-14 09:00:00 +0000
 categories: [Tutorials]
