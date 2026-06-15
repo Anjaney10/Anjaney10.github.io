@@ -2,19 +2,6 @@
 
 Bioinformatics & Computational Biology personal website built with the **Jekyll Chirpy** theme.
 
-## Quick start
-
-1. Install Ruby and Bundler.
-2. Install dependencies:
-   ```bash
-   bundle install
-   ```
-3. Run locally:
-   ```bash
-   bundle exec jekyll serve
-   ```
-4. Open `http://127.0.0.1:4000`.
-
 ## Content structure
 
 - `_posts/` — all blog posts in Markdown
@@ -42,9 +29,6 @@ author: Anjaney
 
 Your content in Markdown.
 
-```python
-print("code blocks support syntax highlighting")
-```
 ```
 
 ## Comments (Giscus)
