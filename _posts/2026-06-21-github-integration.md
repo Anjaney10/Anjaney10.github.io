@@ -28,6 +28,7 @@ Before we touch any commands, here are the non-negotiable rules I follow to keep
 
 * **Never commit raw data:** GitHub has strict file size limits and is meant for code, not data. Create a `.gitignore` file in your main folder and add extensions like `*.bam`, `*.vcf`, `*.fastq`, and `*.csv`.
 * **Track your environment, not just your code:** Code rot is real. A script that runs today might break next year due to package updates. I use Conda, so I always export my environment and commit it alongside my scripts:
+
 ```bash
 conda env export --no-builds > environment.yml
 ```
@@ -49,9 +50,10 @@ If you created a repository on GitHub first and want to push your local VS Code 
 
 ```bash
 git remote add origin https://github.com/yourusername/your-repo-name.git
-git branch -M main
-git push -u origin main
 
+git branch -M main
+
+git push -u origin main
 ```
 
 **2. Handling the "Non-Fast-Forward" Error**
@@ -59,7 +61,6 @@ If GitHub rejects your push because the repository already has a `README.md` or 
 
 ```bash
 git push -u origin main --force
-
 ```
 
 **3. Handling the "GH007: Private Email" Error**
@@ -67,9 +68,10 @@ If GitHub blocks your push to protect your email privacy, get your anonymous Git
 
 ```bash
 git config --global user.email "your-anonymous-email@users.noreply.github.com"
-git commit --amend --reset-author --no-edit
-git push origin main --force
 
+git commit --amend --reset-author --no-edit
+
+git push origin main --force
 ```
 
 **4. The Daily VS Code Routine**
@@ -91,12 +93,16 @@ Navigate to your project directory and run:
 
 ```bash
 git init
-git add .
-git commit -m "Initial commit of bioinformatics pipeline"
-git branch -M main
-git remote add origin https://github.com/yourusername/your-repo-name.git
-git push -u origin main
 
+git add .
+
+git commit -m "Initial commit of bioinformatics pipeline"
+
+git branch -M main
+
+git remote add origin https://github.com/yourusername/your-repo-name.git
+
+git push -u origin main
 ```
 
 **2. The Daily Terminal Routine**
@@ -104,9 +110,10 @@ After a day of coding, my sync routine looks like this:
 
 ```bash
 git add script_name.py environment.yml
-git commit -m "Update variant calling parameters"
-git push origin main
 
+git commit -m "Update variant calling parameters"
+
+git push origin main
 ```
 
 ### Scenario C: RStudio
