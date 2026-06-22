@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "A Comprehensive Guide to Installing TissUUmaps and Visualizing Visium HD Spatial Data"
+title: "TissUUmaps for visualizing Visium HD spatial data"
 date: 2026-06-14 12:00:00 +0000
 categories: [Resources]
-tags: [resources, tools]
+tags: [resources, tools, setup]
 author: Anjaney
 ---
 
@@ -26,7 +26,6 @@ wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge
 bash Miniforge3-Linux-x86_64.sh -b
 ~/miniforge3/bin/conda init bash
 source ~/.bashrc
-
 ```
 
 #### Step 2: Create the Conda Environment and Install Dependencies
@@ -36,21 +35,18 @@ Create a clean Python 3.12 environment specifically for TissUUmaps:
 ```bash
 conda create -n tissuumaps_env python=3.12 -y
 conda activate tissuumaps_env
-
 ```
 
 Next, install the "heavy" libraries via conda-forge. We explicitly install downgraded versions of Flask and Werkzeug to maintain compatibility with TissUUmaps:
 
 ```bash
 conda install -c conda-forge h5py libvips openslide pyvips pytables flask=2.3.3 werkzeug=2.3.7 -y
-
 ```
 
 Finally, install TissUUmaps via `pip`, but use the `--no-deps` flag to prevent it from overwriting the stable dependencies we just established via Conda:
 
 ```bash
 pip install tissuumaps --no-deps
-
 ```
 
 #### Step 3: Create a Desktop Shortcut
@@ -59,7 +55,6 @@ To avoid launching from the terminal every time, create a `.desktop` file. Note 
 
 ```bash
 nano ~/.local/share/applications/tissuumaps.desktop
-
 ```
 
 Paste the following configuration:
@@ -73,7 +68,6 @@ Icon=/home/YOUR_USERNAME/miniforge3/envs/tissuumaps_env/lib/python3.12/site-pack
 Terminal=false
 Type=Application
 Categories=Science;
-
 ```
 
 Save (`Ctrl+O`, `Enter`) and exit (`Ctrl+X`). You can now launch TissUUmaps from your application menu.
@@ -92,7 +86,6 @@ Convert this massive image into a Deep Zoom Image (DZI) using the command line t
 
 ```bash
 vips dzsave cytassist_image.tiff my_tissue_pyramid
-
 ```
 
 #### Preparing the Expression Data (Segmented Cells)
@@ -133,7 +126,6 @@ adata.obs_names = gdf['formatted_id'].values
 
 # 6. Save the optimized file for TissUUmaps
 adata.write('visium_hd_segmented_centroids.h5ad')
-
 ```
 
 *Brief Explanation:* The line `gdf.crs = None` is critical. Geopandas will throw a warning and calculate incorrect coordinates if it thinks your data is on a geographic sphere (Earth). Stripping the CRS forces it to use simple, flat Euclidean math suitable for a microscope slide. Furthermore, the `barcode_mappings.parquet` is not strictly necessary for this step since you can dynamically map the integer `cell_id` from the GeoJSON to the formatted string expected by the `.h5` file.
