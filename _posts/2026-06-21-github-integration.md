@@ -49,11 +49,9 @@ VS Code has a fantastic visual Git interface, but linking an existing GitHub rep
 If you created a repository on GitHub first and want to push your local VS Code files to it, open your integrated terminal and run:
 
 ```bash
-git remote add origin https://github.com/yourusername/your-repo-name.git  
-
-git branch -M main  
-
-git push -u origin main  
+git remote add origin https://github.com/yourusername/your-repo-name.git
+git branch -M main
+git push -u origin main
 ```
 
 **2. Handling the "Non-Fast-Forward" Error**
@@ -67,10 +65,8 @@ git push -u origin main --force
 If GitHub blocks your push to protect your email privacy, get your anonymous GitHub email from your settings (`12345678+username@users.noreply.github.com`) and update your Git config:
 
 ```bash
-git config --global user.email "your-anonymous-email@users.noreply.github.com"  
-
-git commit --amend --reset-author --no-edit  
-
+git config --global user.email "your-anonymous-email@users.noreply.github.com"
+git commit --amend --reset-author --no-edit
 git push origin main --force  
 ```
 
@@ -92,16 +88,11 @@ If you are working via SSH on an HPC cluster, you won't have a graphical interfa
 Navigate to your project directory and run:
 
 ```bash
-git init  
-
-git add .  
-
-git commit -m "Initial commit of bioinformatics pipeline"  
-
-git branch -M main  
-
-git remote add origin https://github.com/yourusername/your-repo-name.git  
-
+git init
+git add .
+git commit -m "Initial commit of bioinformatics pipeline"
+git branch -M main
+git remote add origin https://github.com/yourusername/your-repo-name.git
 git push -u origin main  
 ```
 
@@ -109,10 +100,8 @@ git push -u origin main
 After a day of coding, my sync routine looks like this:
 
 ```bash
-git add script_name.py environment.yml  
-
-git commit -m "Update variant calling parameters"  
-
+git add script_name.py environment.yml
+git commit -m "Update variant calling parameters"
 git push origin main  
 ```
 
