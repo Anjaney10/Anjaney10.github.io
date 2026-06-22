@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A Bioinformatics Guide to Version Control"
+title: "Version Control with Git/GitHub"
 date: 2026-06-21 09:00:00 +0000
 categories: [Tutorials]
 tags: [bioinformatics, git, github, version control]
@@ -13,7 +13,7 @@ As bioinformaticians, we deal with enough complexity in our data pipelines; savi
 
 In this guide, I will break down exactly how Git and GitHub communicate, share my strict rules for version-controlling bioinformatics projects, and provide step-by-step setups tailored to your specific coding environment—whether you use VS Code, RStudio, a pure Bash terminal, or Jupyter Notebooks.
 
-## The Mental Model (Snapshots vs. Cloud Backups)
+## The Mental Model
 
 The biggest hurdle in learning version control is understanding that tracking a file locally does not automatically upload it to GitHub. Git operates in distinct phases:
 
