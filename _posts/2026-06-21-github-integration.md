@@ -30,8 +30,8 @@ Before we touch any commands, here are the non-negotiable rules I follow to keep
 * **Track your environment, not just your code:** Code rot is real. A script that runs today might break next year due to package updates. I use Conda, so I always export my environment and commit it alongside my scripts:
 ```bash
 conda env export --no-builds > environment.yml
-
 ```
+
 * **Commit logically:** Commit when you finish a specific task (e.g., `Add data parsing function`), not just at the end of the day.
 
 ---
