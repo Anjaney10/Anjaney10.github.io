@@ -32,10 +32,6 @@ Your content in Markdown.
 
 ```
 
-## Comments (Giscus)
-
-Update the `comments.giscus` values in `_config.yml` with your Giscus repository and category IDs.
-
 ## Deployment
 
 GitHub Pages deployment is configured in `.github/workflows/pages.yml`.
