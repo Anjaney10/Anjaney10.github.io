@@ -14,7 +14,7 @@ It felt like my system was groaning under the weight of gigabytes of stale depen
 
 That is the exact moment I decided to completely nuke Miniconda from the system and switch to **Pixi**.
 
-Pixi is a modern, blazing-fast package manager built in Rust. 
+[Pixi](https://prefix.dev/blog/pixi_a_fast_conda_alternative) is a modern, blazing-fast package manager built in Rust. 
 
 Instead of managing global environments that inevitably bleed into one another, Pixi manages dependencies purely on a *per-project* basis.
 
