@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Migrating from Conda to Pixi: A cleaner and faster alternative"
-date: 2026-06-14 09:00:00 +0000
+date: 2026-07-13 09:00:00 +0000
 categories: [Tutorials]
 tags: [bioinformatics, package management, rust]
-author: Anjaney and Google Gemini Pro
+author: Anjaney
 ---
 If you have been working with data science tools, Python, and R for a while, you know the struggle. 
 
