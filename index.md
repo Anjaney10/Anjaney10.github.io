@@ -7,7 +7,7 @@ permalink: /
 I am **Anjaney**, a bioinformatician, and through this blog, I want to share interesting **bioinformatics** lessons I learnt along the journey.
 
 ### Research interests
-- Genomics and spatia/single-cell transcriptomics workflows
+- Genomics and spatial/single-cell transcriptomics workflows
 - Reproducible computational pipelines
 - Python, R, and Bash for bioinformatics
 - Biological data analysis and visualization
