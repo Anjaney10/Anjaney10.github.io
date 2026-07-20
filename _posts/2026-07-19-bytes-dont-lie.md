@@ -4,7 +4,7 @@ title: "Bytes don't lie: How a hidden space broke my single-cell pipeline"
 date: 2026-07-19 09:00:00 +0000
 categories: [Troubleshooting]
 tags: [error, bugs, troubleshooting]
-author: Anjaney and Gemini
+author: Anjaney
 ---
 You know the feeling. You’re deep into a single-cell RNA sequencing analysis, prepping your object for downstream analysis. All that’s left is a simple metadata merge to bring in your clinical annotations. You run the join, check the output, and everything looks perfect, except for one stubborn sample that refuses to annotate. It just sits there, mocking you with an `NA` where its disease annotation should have been.
 
