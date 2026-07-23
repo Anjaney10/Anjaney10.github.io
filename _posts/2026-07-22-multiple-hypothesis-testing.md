@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "Mathematical reasoning behind multiple hypothesis correction"
+title: "Mathematical reasoning behind multiple hypothesis testing and correction"
 date: 2026-07-23 09:00:00 +0000
+math: true
 categories: [Tutorials]
 tags: [biostats, deseq, maths]
 author: Anjaney
@@ -103,7 +104,7 @@ $$q_{(i)} = \min_{j \ge i} \left( \min \left( 1, \frac{m \cdot p_{(j)}}{j} \righ
 
 ---
 
-## 4. Full Workflow for DEG Analysis
+## Full Workflow for DEG Analysis
 
 In RNA-seq differential expression analysis, $m \approx 20{,}000 - 60{,}000$ genes tested simultaneously.
 
