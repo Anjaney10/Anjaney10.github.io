@@ -70,12 +70,19 @@ Controls $FWER \le \alpha$. Reject $H_{0,i}$ if $p_i \le \frac{\alpha}{m}$.
 Let $I_0 \subset \{1, \dots, m\}$ be set of true null hypotheses ($\vert{}I_0\vert{} = m_0$).
 Under $H_0$, $P_i \sim \text{Uniform}(0, 1)$, so $P(P_i \le c) = c$.
 
+{% raw %}
+
 $$FWER = P(V \ge 1) = P\left( \bigcup_{i \in I_0} \left\\{ P_i \le \frac{\alpha}{m} \right\\} \right)$$
+
+{% endraw %}
 
 By Boole's Inequality (Union Bound):
 
+{% raw %}
 
 $$P\left( \bigcup_{i \in I_0} \left\\{ P_i \le \frac{\alpha}{m} \right\\} \right) \le \sum_{i \in I_0} P\left( P_i \le \frac{\alpha}{m} \right) = m_0 \cdot \frac{\alpha}{m} \le m \cdot \frac{\alpha}{m} = \alpha$$
+
+{% endraw %}
 
 *Limitation:* Overly conservative when $m$ large. High Type II error (low statistical power).
 
@@ -90,7 +97,11 @@ Controls $FDR \le q^*$ target threshold. Standard choice for DEG analysis.
 1. Sort raw p-values in ascending order: $p_{(1)} \le p_{(2)} \le \dots \le p_{(m)}$.
 2. Find maximum index $k$:
 
+{% raw %}
+
 $$k = \max \left\\{ i \in \{1, \dots, m\} : p_{(i)} \le \frac{i}{m} q^* \right\\}$$
+
+{% endraw %}
 
 
 3. Reject $H_{(1)}, H_{(2)}, \dots, H_{(k)}$. If no such index $i$ exists, reject none.
