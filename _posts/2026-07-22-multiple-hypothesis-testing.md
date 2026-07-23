@@ -73,7 +73,7 @@ Under $H_0$, $P_i \sim \text{Uniform}(0, 1)$, so $P(P_i \le c) = c$.
 {% raw %}
 
 $$
-FWER = P(V \ge 1) = P\left( \bigcup_{i \in I_0} \left\\{ P_i \le \frac{\alpha}{m} \right\\} \right)
+FWER = P(V \ge 1) = P\left.( \bigcup_{i \in I_0} \left\\{ P_i \le \frac{\alpha}{m} \right\\} \right.)
 $$
 
 {% endraw %}
@@ -83,7 +83,7 @@ By Boole's Inequality (Union Bound):
 {% raw %}
 
 $$
-P\left( \bigcup_{i \in I_0} \left\\{ P_i \le \frac{\alpha}{m} \right\\} \right) \le \sum_{i \in I_0} P\left( P_i \le \frac{\alpha}{m} \right) = m_0 \cdot \frac{\alpha}{m} \le m \cdot \frac{\alpha}{m} = \alpha
+P\left.( \bigcup_{i \in I_0} \left\\{ P_i \le \frac{\alpha}{m} \right\\} \right.) \le \sum_{i \in I_0} P\left.( P_i \le \frac{\alpha}{m} \right.) = m_0 \cdot \frac{\alpha}{m} \le m \cdot \frac{\alpha}{m} = \alpha
 $$
 
 {% endraw %}
