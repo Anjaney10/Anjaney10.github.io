@@ -22,9 +22,9 @@ Create a new file in `_posts/` with `YYYY-MM-DD-title.md`:
 ---
 layout: post
 title: "Your Post Title"
-date: 2026-06-14 09:00:00 +0000
+date: 2026-- 09:00:00 +0000
 categories: [Tutorials]
-tags: [bioinformatics, python]
+tags: [concepts, R]
 author: Anjaney
 ---
 
